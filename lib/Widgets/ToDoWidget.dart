@@ -24,13 +24,13 @@ class _ToDoItemState extends State<ToDoItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 20),
+      margin: const EdgeInsets.only(bottom: 20),
       child: ListTile(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
         tileColor: Colors.white,
-        contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         onTap: () {
 
           widget.onCheckboxChange(widget.myToDoObject);
@@ -63,7 +63,7 @@ class _ToDoItemState extends State<ToDoItem> {
               color: AppColors.tdRed,
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Icon(
+            child: const Icon(
               Icons.delete,
               color: Colors.white,
             ),
