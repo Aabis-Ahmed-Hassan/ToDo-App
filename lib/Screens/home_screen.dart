@@ -130,7 +130,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 fontWeight: FontWeight.w500,
                               )),
                         ),
-                        for (ToDoModel myToDo in foundToDo)
+                        for (ToDoModel myToDo in foundToDo.reversed)
                           ToDoItem(
                             myToDoObject: myToDo,
                             onCheckboxChange: onCheckboxChange,
